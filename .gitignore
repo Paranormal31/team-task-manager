@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.DS_Store
+
+# Local-only project resources
+Customs/
+scratch/
+design.md
+project_login_info.txt
+sample_login_info.txt
