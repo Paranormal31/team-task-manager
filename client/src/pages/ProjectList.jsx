@@ -155,8 +155,12 @@ const ProjectList = () => {
           <div style={{ borderLeft: '1px solid #e2e8f0', height: '24px' }}></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <div style={{ textAlign: 'right' }}>
-              <p style={{ fontSize: '0.875rem', fontWeight: '700', color: '#1e293b' }}>Sarah Chen</p>
-              <p style={{ fontSize: '0.75rem', color: '#64748b' }}>Lead Researcher</p>
+              <p style={{ fontSize: '0.875rem', fontWeight: '700', color: '#1e293b' }}>
+                {currentUser?.name || currentUser?.username || 'User'}
+              </p>
+              <p style={{ fontSize: '0.75rem', color: '#64748b' }}>
+                {currentUser?.role || currentUser?.description || 'No description'}
+              </p>
             </div>
             {currentUser?.avatar ? (
               <img
